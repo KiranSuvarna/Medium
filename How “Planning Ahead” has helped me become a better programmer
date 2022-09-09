@@ -1,0 +1,17 @@
+This routine returns a success or an error message depending on an Email address that is given by the caller routine. If the email is valid, it returns a success message; otherwise, it returns an error message.
+
+# Derive an email regular expression to test the Email address
+
+# IF the email does not adhere to the regex rule. 
+    # Keep a record of the email and error message by logging 
+    # Return the message "Invalid Email" 
+    
+# ELSE, if the above condition is false the email address matches the regex, determine to see if the database already contains a similar email address. 
+
+# IF it already does, 
+    # Keep a record of the email and error message by logging 
+    # Return "Email already exists!" error message
+    
+# IF the above criteria are not met, 
+    # Log the email and success message to keep a record 
+    # Return the success message to the caller
